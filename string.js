@@ -47,3 +47,24 @@ for (let i=0;i<Str.length;i++){
 
 }
 console.log(ans);
+
+// Question 5
+let str1 = "hello world";
+let str2 = "od";
+
+let result = "";
+
+for (let i = 0; i < str1.length; i++) {
+  let found = false;
+
+  for (let j = 0; j < str2.length; j++) {
+    if (str1[i] === str2[j]) {
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) result += str1[i];
+}
+
+console.log(result);
