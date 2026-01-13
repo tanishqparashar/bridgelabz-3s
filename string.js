@@ -31,3 +31,19 @@ function runLengthEncode(str) {
     return result;
 }
 console.log(runLengthEncode("aaabbc"));
+
+// Question 4
+let Str ="swiss";
+let ans="";
+for (let i=0;i<Str.length;i++){
+    let count=0;
+    for(let j=0;j<Str.length;j++){
+        if(Str[i]===Str[j]) count++;
+    }
+    if(count === 1){
+        ans = Str[i];
+        break;
+    }
+
+}
+console.log(ans);
